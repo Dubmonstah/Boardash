@@ -10,12 +10,12 @@
 }
 .top__main>.top__flexbox:nth-child(even) {
     background: white;
-    box-shadow: 1px 1px 1px 1px #888888;
+    box-shadow: 1px 1px 1px 1px #e6e6e6;
 }
 
 .top__main>.top__flexbox:nth-child(odd) {
     background: white;
-    box-shadow: 1px 1px 1px 1px #888888;
+    box-shadow: 1px 1px 1px 1px #e6e6e6;
 }
 .fa.fa-users {
     font-size:36px;
@@ -30,7 +30,7 @@
     float: left;
     border-radius: 100%;
     padding: 10px;
-    background-color: lightgrey;
+    background-color: #e6e6e6;
     margin: 20px 0 20px 10px;
 }
 .flexbox__titles {
