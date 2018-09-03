@@ -17,21 +17,15 @@
     background: white;
     box-shadow: 1px 1px 1px 1px #e6e6e6;
 }
-.fa.fa-users {
-    font-size:36px;
-}
-.fa.fa-calendar {
-    font-size:36px;
-}
-.fa.fa-calendar-times-o {
-    font-size:36px;
+.flexbox__img {
+    width: 40px;
 }
 .flexbox__icon {
     float: left;
     border-radius: 100%;
     padding: 10px;
-    background-color: #e6e6e6;
-    margin: 20px 0 20px 10px;
+    background-color: #f3f2f2;
+    margin: 20px 0 20px 35px;
 }
 .flexbox__titles {
     text-align: center;
