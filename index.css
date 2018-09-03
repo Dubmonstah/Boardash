@@ -1,0 +1,19 @@
+.top__main {
+    display: flex;
+    background-color: white;
+    flex-wrap: wrap;
+}
+.top__main>.top__flexbox {
+    flex-grow: 1;
+    width: 33%;
+    height: 100px;
+}
+.top__main>.top__flexbox:nth-child(even) {
+    background: white;
+    border: 1px solid grey;
+}
+
+.top__main>.top__flexbox:nth-child(odd) {
+    background: white;
+    border: 1px solid grey;
+}
