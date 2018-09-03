@@ -1,2 +1,44 @@
+.page__body {
+  background-color: #ebe9e9; }
+  .page__body .page__header {
+    display: flex;
+    background-color: white;
+    justify-content: flex-start;
+    flex-flow: row;
+    align-items: center; }
+    .page__body .page__header .page__logo {
+      width: 20%;
+      text-align: center;
+      padding-left: 100px; }
+    .page__body .page__header .header__search {
+      margin-left: 70px;
+      width: 850px;
+      height: 40px; }
+      .page__body .page__header .header__search .search__button {
+        height: 38px;
+        width: 50px;
+        border: none;
+        position: absolute;
+        background-color: #ebe9e9;
+        outline: none;
+        border-radius: 15px 0px 0px 15px; }
+        .page__body .page__header .header__search .search__button .search__img {
+          height: 10px; }
+      .page__body .page__header .header__search .header__search-bar {
+        height: 90%;
+        width: 400px;
+        background-color: #ebe9e9;
+        border: none;
+        border-radius: 5px 0px 0px 5px;
+        padding-left: 60px;
+        outline: none; }
+      .page__body .page__header .header__search .search__filter {
+        outline: none;
+        height: 38px;
+        width: 130px;
+        background-color: #5c96ee;
+        position: absolute;
+        border: none;
+        border-radius: 0px 5px 5px 0px; }
 
 /*# sourceMappingURL=index.css.map */

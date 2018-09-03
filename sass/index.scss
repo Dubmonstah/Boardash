@@ -1,1 +1,56 @@
+.page__body{
+    background-color: rgb(235, 233, 233);
+    .page__header{
+        display: flex;
+        background-color: white;
+        justify-content: flex-start;
+        flex-flow: row;
+        align-items: center;
+        
+        .page__logo{
+            width: 20%;
+            text-align: center;
+            padding-left: 100px;
+        }
 
+        .header__search{
+            margin-left: 70px;
+            width: 850px;
+            height: 40px;
+
+            .search__button{
+                height: 38px;
+                width: 50px;
+                border: none;
+                position: absolute;
+                background-color: rgb(235, 233, 233);
+                outline: none;
+                border-radius: 15px 0px 0px 15px;
+                
+                .search__img{
+                    height: 10px;
+                }
+            }
+            
+            .header__search-bar{
+                height: 90%;
+                width: 400px;
+                background-color: rgb(235, 233, 233);
+                border: none;
+                border-radius: 5px 0px 0px 5px;
+                padding-left: 60px;
+                outline: none;
+            }
+            
+            .search__filter{
+                outline: none;
+                height: 38px;
+                width: 130px;
+                background-color: rgb(92, 150, 238);
+                position: absolute;
+                border: none;
+                border-radius: 0px 5px 5px 0px;
+            }
+        }
+    }
+}
