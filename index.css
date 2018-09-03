@@ -17,3 +17,19 @@
     background: white;
     border: 1px solid grey;
 }
+.fa.fa-users {
+    font-size:36px;
+}
+.fa.fa-calendar {
+    font-size:36px;
+}
+.fa.fa-calendar-times-o {
+    font-size:36px;
+}
+.flexbox__icon {
+    float: left;
+    border-radius: 100%;
+    padding: 10px;
+    background-color: lightgrey;
+    margin: 20px 0 20px 10px;
+}
