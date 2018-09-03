@@ -12,7 +12,7 @@
       padding-left: 100px; }
     .page__body .page__header .header__search {
       margin-left: 70px;
-      width: 850px;
+      width: 800px;
       height: 40px; }
       .page__body .page__header .header__search .search__button {
         height: 38px;
@@ -40,5 +40,15 @@
         position: absolute;
         border: none;
         border-radius: 0px 5px 5px 0px; }
+    .page__body .page__header .header__profile-icon {
+      height: 30px;
+      border-radius: 50%; }
+    .page__body .page__header .header__profile-name {
+      margin-left: 15px;
+      color: gray; }
+    .page__body .page__header .header__add {
+      margin-left: 20px;
+      height: 20px;
+      color: gray; }
 
 /*# sourceMappingURL=index.css.map */

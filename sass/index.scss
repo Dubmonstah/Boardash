@@ -15,7 +15,7 @@
 
         .header__search{
             margin-left: 70px;
-            width: 850px;
+            width: 800px;
             height: 40px;
 
             .search__button{
@@ -52,5 +52,21 @@
                 border-radius: 0px 5px 5px 0px;
             }
         }
-    }
+
+            .header__profile-icon{
+                height: 30px;
+                border-radius: 50%;
+            }
+            .header__profile-name{
+                margin-left: 15px;
+                color: gray;
+            }
+
+            .header__add{
+                margin-left: 20px;
+                height: 20px;
+                color: gray;
+            }
+        }
+    
 }
