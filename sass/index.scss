@@ -114,4 +114,114 @@
         }
     }
     
+    .grid-container {
+        box-shadow: 0px 0px 3px 0px #e0e0e0;
+        display: grid;
+        grid-row: 1/9;
+        grid-row-gap: 10px;
+        background-color: white;
+        width: 17%;
+        margin-top: 9%;
+        margin-left: 2%;
+        padding-bottom: 4%;
+    }
+    .grid-bookmark{
+        width: 5%;
+        position: absolute;
+        margin-left: 14%;
+        color: #2aa42a;
+        margin-top: -0.1%;
+    }
+    
+    .grid-admin{
+        padding-bottom: 7%;
+    }
+    
+    .grid-admin--png{
+        width: 13%;
+        border-radius: 12%;
+        margin-top: 7%;
+        margin-left: 8%;
+        float: left;
+    }
+    
+    .grid-admin--text{
+        margin-top: 9%;
+        margin-left: 27%;
+        line-height: 0.3em;
+    }
+    .grid-admin--welcome{
+        color: #656565
+    }
+    .grid-admin--rank{
+        font-size: 11px;
+        color: #b2b2b2;
+    }
+    
+    /*Nav-bar Links*/
+    
+    .grid-nav{
+        padding-top: 3.2%;
+        padding-bottom: 1%;
+    }
+    .grid-nav:hover{
+        background-color: #e6f2ff;
+        border-left: 1.5px solid #3399ff;
+        color: #3399ff;
+    }
+    .grid-nav--icon:hover {
+        color: #3399ff;
+    }
+    .grid-nav--icon{
+        margin-left: 20%;
+        color: grey;
+        width: 81%;
+        float: left;
+        font-size: 17px;
+        padding-top: 1%;
+    }
+    
+    .grid-nav--title{
+        line-height: 0.1em;
+        margin-top: -5.8%;
+        margin-left: 15%;
+    }
+    .grid-nav--logout{
+        padding-top: 3.2%;
+        padding-bottom: 1%;
+        margin-top: 20%;
+    }
+    .grid-nav--logout:hover{
+        background-color: #e6f2ff;
+        border-left: 1.5px solid #3399ff;
+        color: #3399ff;
+    }
+    
+    /*icon styles*/
+    
+    .fas.fa-th-large{
+        font-size: 13px;
+    }
+    .far.fa-credit-card{
+        font-size: 13px;
+    }
+    .fas.fa-bookmark{
+        font-size: 13px;
+    }
+    .fas.fa-users{
+        font-size: 13px;
+    }
+    .fas.fa-ticket-alt{
+        font-size: 13px;
+    }
+    .fas.fa-comments{
+        font-size: 13px;
+    }
+    .fas.fa-user{
+        font-size: 13px;
+    }
+    .fas.fa-power-off{
+        font-size: 13px;
+    }
+    
 }
