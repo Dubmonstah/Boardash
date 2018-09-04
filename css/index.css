@@ -1,0 +1,59 @@
+.messages__grid-container {
+  background: transparent;
+  display: flex; }
+
+.messages__grid-header {
+  display: flex;
+  border-radius: 3px 3px 0px 0px; }
+  .messages__grid-header .messages__profile {
+    border-radius: 100%; }
+
+.messages__grid-body {
+  display: flex;
+  border-top: 2px; }
+
+.messages__going {
+  color: blue;
+  font-size: 16px; }
+
+.messages__pending {
+  color: red;
+  font-size: 16px; }
+
+.message__details {
+  font-size: 16px;
+  color: #A9A9A9; }
+
+.messages__members-going {
+  border-radius: 100%;
+  border-size: 8px;
+  border-color: white; }
+
+.messages__footer {
+  display: flex;
+  border-top: 2px;
+  border-radius: 0px 0px 3px 3px; }
+  .messages__footer a {
+    text-decoration: none;
+    display: block;
+    font-size: 14px;
+    color: #A9A9A9;
+    text-align: center; }
+  .messages__footer:hover {
+    background-color: blue;
+    border-radius: 0px; }
+    .messages__footer:hover a {
+      color: white; }
+
+.messages__name {
+  font-size: 14px; }
+
+.messages__email {
+  font-size: 8px;
+  color: #ece9ee; }
+
+.messages__time {
+  font-size: 10px;
+  color: #A9A9A9; }
+
+/*# sourceMappingURL=index.css.map */

@@ -1,0 +1,78 @@
+$messages-font: 14px;
+$font-body: 16px;
+$messages-color: #A9A9A9;
+
+.messages__grid-container {
+  background: transparent;
+  display: flex;
+}
+
+.messages__grid-header {
+  display: flex;
+  border-radius: 3px 3px 0px 0px;
+
+  .messages__profile {
+    border-radius: 100%;
+  }
+}
+
+.messages__grid-body {
+  display: flex;
+  border-top: 2px;
+  }
+
+.messages__going {
+  color: blue;
+  font-size: $font-body;
+}
+
+.messages__pending {
+  color: red;
+  font-size: $font-body;
+}
+.message__details {
+  font-size: $font-body;
+  color: $messages-color;
+}
+
+.messages__members-going {
+  border-radius: 100%;
+  border-size: 8px;
+  border-color: white;
+  }
+
+.messages__footer {
+  display: flex;
+  border-top: 2px;
+  border-radius: 0px 0px 3px 3px;
+
+   a {
+     text-decoration: none;
+     display: block;
+     font-size: $messages-font;
+     color: $messages-color;
+     text-align: center;
+   }
+
+  &:hover {
+    background-color: blue;
+    border-radius: 0px;
+    a {
+      color: white;
+    }
+  }
+}
+
+.messages__name {
+  font-size: $messages-font;
+}
+
+.messages__email {
+  font-size: 8px;
+  color: #ece9ee;
+}
+
+.messages__time {
+  font-size: 10px;
+  color: $messages-color;
+}
