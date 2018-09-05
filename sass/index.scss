@@ -9,6 +9,7 @@
         justify-content: flex-start;
         flex-flow: row;
         align-items: center;
+        box-shadow: #656565 9px;
         
         .page__logo{
             width: 20%;
@@ -113,7 +114,7 @@
             }
         }
     }
-    
+
     .grid-container {
         box-shadow: 0px 0px 3px 0px #e0e0e0;
         display: grid;
@@ -169,7 +170,7 @@
         border-left: 1.5px solid #3399ff;
         color: #3399ff;
     }
-    .grid-nav--icon:hover {
+    .grid-nav:hover .grid-nav--icon{
         color: #3399ff;
     }
     .grid-nav--icon{
@@ -178,12 +179,11 @@
         width: 81%;
         float: left;
         font-size: 17px;
-        padding-top: 1%;
     }
     
     .grid-nav--title{
         line-height: 0.1em;
-        margin-top: -5.8%;
+        margin-top: -4%;
         margin-left: 15%;
     }
     .grid-nav--logout{
