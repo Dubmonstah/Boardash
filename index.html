@@ -7,30 +7,34 @@
 </head>
 <body>
     <!-- Flex messages container -->
-    <div class="messages__grid-container">
-        <h3 class="messages__title">Today - 8 meeting</h3>
+    <div class="message__container">
+        <h3 class="message__title">Today - 8 meeting</h3>
         <!-- Flex grid -->
-            <div class="messages__grid">
-                <div class="messages__header">
-                    <img class="messages__profile">
-                    <p class="messages__name">Design catchup</p>
-                    <p class="messages__email">adellac@josianne.com</p>
-                    <p class="messages__time">10 : 30 AM</p>
-                </div>
-                    <div class="messages__body">
-                        <div class="messages__status">
-                            <p class="messages__going">9 Members Going</p>
-                            <p class="messages__pending">2 Pending</p>
+            <div class="message">
+                <div class="message__header">
+                    <div class="message__picture">
+                        <img class="message__profile" src="test__image.png">
+                    </div>
+                        <div class="message__description">
+                            <p class="message__name">Design catchup</p>
+                            <p class="message__email">adellac@josianne.com</p>
+                            <p class="message__time">10 : 30 AM</p>
                         </div>
-                            <div class="messages__images">
-                                <img class="messages__members-going">
-                                <img class="messages__members-going">
-                                <p class="message__details">+5 more</p>
+                    </div>
+                        <div class="message__body">
+                            <div class="message__status">
+                                <p class="message__going">9 Members Going</p>
+                                <p class="message__pending">2 Pending</p>
                             </div>
+                                <div class="message__images">
+                                    <img class="message__members-going" src="test__image.png">
+                                    <img class="message__members-going" src="test__image.png">
+                                    <p class="message__details">+5 more</p>
+                                </div>
                         </div>
-                            <div class="messages__footer">
-                                <a href="#">View Details</a></p>
-                            </div>
+                    <div class="message__footer">
+                        <a href="#">View Details</a></p>
+                    </div>
             </div>
     </div>
 </body>

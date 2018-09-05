@@ -1,59 +1,86 @@
-.messages__grid-container {
-  background: transparent;
-  display: flex; }
+html {
+  background-color: #FAFAFA; }
 
-.messages__grid-header {
+.message__container {
+  background: transparent; }
+
+.message {
+  width: 18%;
+  background-color: #FFFFFF;
+  border-radius: 8px; }
+
+.message__header {
   display: flex;
-  border-radius: 3px 3px 0px 0px; }
-  .messages__grid-header .messages__profile {
-    border-radius: 100%; }
+  align-items: flex-start;
+  border-style: solid;
+  border-color: #FAFAFA;
+  border-width: 0px 0px 2px 0px; }
+  .message__header .message__profile {
+    border-radius: 100%;
+    width: 100px;
+    height: 100px;
+    align-self: center;
+    margin: 10px; }
 
-.messages__grid-body {
+.message__body {
   display: flex;
-  border-top: 2px; }
+  flex-direction: column;
+  align-items: center;
+  padding-top: 14px;
+  border-style: solid;
+  border-color: #FAFAFA;
+  border-width: 0px 0px 2px 0px; }
 
-.messages__going {
-  color: blue;
-  font-size: 16px; }
+.message__status {
+  padding-bottom: 24px; }
 
-.messages__pending {
-  color: red;
-  font-size: 16px; }
+.message__going {
+  color: #3399FF;
+  font-size: 20px;
+  display: inline; }
+
+.message__pending {
+  color: #FF613B;
+  font-size: 20px;
+  display: inline; }
 
 .message__details {
-  font-size: 16px;
-  color: #A9A9A9; }
+  font-size: 20px;
+  color: #5e5e5e;
+  display: inline; }
 
-.messages__members-going {
+.message__members-going {
   border-radius: 100%;
-  border-size: 8px;
-  border-color: white; }
+  height: 25px;
+  width: 25px; }
 
-.messages__footer {
+.message__images {
+  padding-bottom: 24px; }
+
+.message__footer {
   display: flex;
-  border-top: 2px;
-  border-radius: 0px 0px 3px 3px; }
-  .messages__footer a {
+  padding: 18px 0px 18px 0; }
+  .message__footer a {
     text-decoration: none;
     display: block;
-    font-size: 14px;
-    color: #A9A9A9;
-    text-align: center; }
-  .messages__footer:hover {
-    background-color: blue;
+    font-size: 20px;
+    color: #5e5e5e;
+    margin: auto; }
+  .message__footer:hover {
+    background-color: #2290FF;
     border-radius: 0px; }
-    .messages__footer:hover a {
+    .message__footer:hover a {
       color: white; }
 
-.messages__name {
-  font-size: 14px; }
+.message__name {
+  font-size: 20px; }
 
-.messages__email {
-  font-size: 8px;
-  color: #ece9ee; }
+.message__email {
+  font-size: 16px;
+  color: #626163; }
 
-.messages__time {
-  font-size: 10px;
-  color: #A9A9A9; }
+.message__time {
+  font-size: 20px;
+  color: #5e5e5e; }
 
 /*# sourceMappingURL=index.css.map */

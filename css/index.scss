@@ -1,61 +1,100 @@
-$messages-font: 14px;
-$font-body: 16px;
-$messages-color: #A9A9A9;
+@mixin test-borders {
+  border-style: solid;
+  border-color: red;
+  border-width: 3px;
+}
 
-.messages__grid-container {
+@mixin message-borders {
+  border-style: solid;
+  border-color: #FAFAFA;
+  border-width: 0px 0px 2px 0px;
+}
+
+$message-font: 20px;
+$font-body: 20px;
+$message-color: #5e5e5e;
+$body-padding: 24px;
+
+html {
+  background-color: #FAFAFA;
+}
+.message__container {
   background: transparent;
-  display: flex;
 }
 
-.messages__grid-header {
-  display: flex;
-  border-radius: 3px 3px 0px 0px;
+.message {
+  // For testing the width & size of messsage.
+  width: 18%;
+  background-color: #FFFFFF;
+  border-radius: 8px;
+}
 
-  .messages__profile {
+.message__header {
+  display: flex;
+  align-items: flex-start;
+  @include message-borders;
+
+  .message__profile {
     border-radius: 100%;
+    width: 100px;
+    height: 100px;
+    align-self: center;
+    margin: 10px;
   }
 }
 
-.messages__grid-body {
+.message__body {
   display: flex;
-  border-top: 2px;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 14px;
+  @include message-borders;
   }
 
-.messages__going {
-  color: blue;
+.message__status {
+  padding-bottom: $body-padding;
+}
+.message__going {
+  color: #3399FF;
   font-size: $font-body;
+  display: inline;
 }
 
-.messages__pending {
-  color: red;
+.message__pending {
+  color: #FF613B;
   font-size: $font-body;
+  display: inline;
 }
 .message__details {
   font-size: $font-body;
-  color: $messages-color;
+  color: $message-color;
+  display: inline;
 }
 
-.messages__members-going {
+.message__members-going {
   border-radius: 100%;
-  border-size: 8px;
-  border-color: white;
+  height: 25px;
+  width: 25px;
+  // border: 8px solid white;
+  //position:relative;
+  //left: 45px;
   }
-
-.messages__footer {
+.message__images {
+  padding-bottom: $body-padding;
+}
+.message__footer {
   display: flex;
-  border-top: 2px;
-  border-radius: 0px 0px 3px 3px;
-
-   a {
+  padding: 18px 0px 18px 0;
+  a {
      text-decoration: none;
      display: block;
-     font-size: $messages-font;
-     color: $messages-color;
-     text-align: center;
+     font-size: $message-font;
+     color: $message-color;
+     margin: auto;
    }
 
   &:hover {
-    background-color: blue;
+    background-color: #2290FF;
     border-radius: 0px;
     a {
       color: white;
@@ -63,16 +102,16 @@ $messages-color: #A9A9A9;
   }
 }
 
-.messages__name {
-  font-size: $messages-font;
+.message__name {
+  font-size: $message-font;
 }
 
-.messages__email {
-  font-size: 8px;
-  color: #ece9ee;
+.message__email {
+  font-size: 16px;
+  color: #626163;
 }
 
-.messages__time {
-  font-size: 10px;
-  color: $messages-color;
+.message__time {
+  font-size: $message-font;
+  color: $message-color;
 }
