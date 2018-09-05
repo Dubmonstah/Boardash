@@ -20,9 +20,8 @@ html {
   border-width: 0px 0px 2px 0px; }
   .message__header .message__profile {
     border-radius: 100%;
-    width: 80px;
-    height: 80px;
-    align-self: center;
+    width: 60px;
+    height: 60px;
     margin: 10px; }
 
 .message__body {

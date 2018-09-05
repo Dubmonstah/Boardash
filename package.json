@@ -3,7 +3,10 @@
   "version": "1.0.0",
   "description": "flexbox",
   "main": "Gruntfile.js",
-  "dependencies": {},
+  "dependencies": {
+    "node": "^10.9.0",
+    "sass": "^1.13.1"
+  },
   "devDependencies": {
     "grunt": "^1.0.3",
     "grunt-browser-sync": "^2.2.0",
