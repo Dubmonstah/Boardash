@@ -1,19 +1,16 @@
 .top__main {
   display: flex;
   background-color: white;
-  flex-wrap: wrap; 
-}
+  flex-wrap: wrap; }
 
 .top__main > .top__flexbox {
   flex-grow: 1;
   width: 33%;
-  height: 100px; 
-}
+  height: 100px; }
 
 .top__main > .top__flexbox:nth-child(even) {
   background: white;
-  box-shadow: 1px 1px 1px 1px #e6e6e6; 
-}
+  box-shadow: 1px 1px 1px 1px #e6e6e6; }
 
 .top__main > .top__flexbox:nth-child(odd) {
   background: white;
