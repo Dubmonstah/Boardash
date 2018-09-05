@@ -2,12 +2,15 @@ html {
   background-color: #FAFAFA; }
 
 .message__container {
-  background: transparent; }
-
-.message {
-  width: 18%;
-  background-color: #FFFFFF;
-  border-radius: 8px; }
+  background: transparent;
+  display: grid;
+  width: 70%;
+  grid-template-columns: auto auto auto auto;
+  grid-template-rows: 14%;
+  grid-gap: 20px; }
+  .message__container > .message {
+    background-color: #FFFFFF;
+    border-radius: 8px; }
 
 .message__header {
   display: flex;
@@ -17,8 +20,8 @@ html {
   border-width: 0px 0px 2px 0px; }
   .message__header .message__profile {
     border-radius: 100%;
-    width: 100px;
-    height: 100px;
+    width: 80px;
+    height: 80px;
     align-self: center;
     margin: 10px; }
 
@@ -32,20 +35,20 @@ html {
   border-width: 0px 0px 2px 0px; }
 
 .message__status {
-  padding-bottom: 24px; }
+  padding-bottom: 16px; }
 
 .message__going {
   color: #3399FF;
-  font-size: 20px;
+  font-size: 14px;
   display: inline; }
 
 .message__pending {
   color: #FF613B;
-  font-size: 20px;
+  font-size: 14px;
   display: inline; }
 
 .message__details {
-  font-size: 20px;
+  font-size: 14px;
   color: #5e5e5e;
   display: inline; }
 
@@ -55,7 +58,7 @@ html {
   width: 25px; }
 
 .message__images {
-  padding-bottom: 24px; }
+  padding-bottom: 16px; }
 
 .message__footer {
   display: flex;
@@ -63,7 +66,7 @@ html {
   .message__footer a {
     text-decoration: none;
     display: block;
-    font-size: 20px;
+    font-size: 16px;
     color: #5e5e5e;
     margin: auto; }
   .message__footer:hover {
@@ -73,14 +76,14 @@ html {
       color: white; }
 
 .message__name {
-  font-size: 20px; }
+  font-size: 16px; }
 
 .message__email {
   font-size: 16px;
   color: #626163; }
 
 .message__time {
-  font-size: 20px;
+  font-size: 16px;
   color: #5e5e5e; }
 
 /*# sourceMappingURL=index.css.map */

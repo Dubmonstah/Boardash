@@ -10,23 +10,27 @@
   border-width: 0px 0px 2px 0px;
 }
 
-$message-font: 20px;
-$font-body: 20px;
+$message-font: 16px;
+$font-body: 14px;
 $message-color: #5e5e5e;
-$body-padding: 24px;
+$body-padding: 16px;
 
 html {
   background-color: #FAFAFA;
 }
 .message__container {
   background: transparent;
-}
+  display: grid;
+  width: 70%;
+  grid-template-columns: auto auto auto auto;
+  grid-template-rows: 14%;
+  grid-gap: 20px;
 
-.message {
-  // For testing the width & size of messsage.
-  width: 18%;
-  background-color: #FFFFFF;
-  border-radius: 8px;
+  & > .message {
+    // For testing the width & size of messsage.
+    background-color: #FFFFFF;
+    border-radius: 8px;
+  }
 }
 
 .message__header {
@@ -36,8 +40,8 @@ html {
 
   .message__profile {
     border-radius: 100%;
-    width: 100px;
-    height: 100px;
+    width: 80px;
+    height: 80px;
     align-self: center;
     margin: 10px;
   }
