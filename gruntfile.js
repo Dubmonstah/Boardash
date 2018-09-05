@@ -18,7 +18,7 @@ module.exports = function(grunt) {
                 files: ['sass/*.scss'],
                 tasks: ['sass'],
                 options: {
-                    spawn: false,
+                    spawn: true,
                 },
             },
          },
