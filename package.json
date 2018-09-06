@@ -1,0 +1,30 @@
+{
+  "name": "boardash",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DvdWel/boardash.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DvdWel/boardash/issues"
+  },
+  "homepage": "https://github.com/DvdWel/boardash#readme",
+  "devDependencies": {
+    "grunt": "^1.0.3",
+    "grunt-browser-sync": "^2.2.0",
+    "grunt-contrib-watch": "^1.1.0",
+    "grunt-sass": "^3.0.1",
+    "node-sass": "^4.9.3",
+    "package-lock.json": "^1.0.0"
+  },
+  "dependencies": {
+    "sass": "^1.13.1"
+  }
+}

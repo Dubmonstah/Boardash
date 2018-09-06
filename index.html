@@ -1,20 +1,147 @@
+
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Boardash</title>
-        <link rel="stylesheet" href="css/Index.css" type="text/css">
-    </head>
-    <body>
-        <header>
+	<head>
+		<link rel="stylesheet" href="css/index.css" type="text/css" >
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Boardash</title>
+		<link rel="stylesheet" type="text/css" href="css/index.css">
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	</head>
+	<body class="page__body">
+		<header class="page__header">
+			<div class="page__logo">
+				<h2 class="header__logo">Boardash</h2>
+			</div>
+			<div class="header__search">
+				<button class="search__button" type="button"><img class="search__img" src="img/search.svg"></button>
+				<input class="header__search-bar" type="text" placeholder="Search">
+				<div class="header__dropdown">
+					<span class="dropdown__text">Category</span>
+					<img class="dropdown__image" src="img/down-arrow.svg" alt="">
+					<div class="header__dropdown-content">
+						<p class="dropdown__text">Category</p>
+					</div>
+				</div>
+			</div>
+				<div class="header__profile">
+					<img src="img/profile-picture.png" class="header__profile-icon">
+					<p class="header__profile-name">Essie Howell</p>
+					<img class="header__add" src="img/plus.svg" alt="">
+				</div>
+		</header>
+		<div class="bottom__section">
+			<nav class="side__nav">
+				<div class="grid-container">
+					<div class="grid-bookmark">
+						<i class="fa fa-bookmark"></i>
+					</div>
 
-         </header>
-        <nav>
+					<div class="grid-admin">
+						<div class="grid-admin--img">
+							<img class="grid-admin--png" src="img/Hadie-profile-pic-circle-1.png">
+						</div>
+						<div class="grid-admin--text">
+							<p class="grid-admin--welcome">Welcome Essie</p>
+							<p class="grid-admin--rank">Admin Head</p>
+						</div>
+					</div>
+					<div class="grid-nav">
+						<div class="grid-nav--icon">
+							<div class="nav__icon">
+								<i class="fas fa-th-large"></i>
+							</div>
+							<p class="grid-nav--title">Overview</p>
+						</div>
+					</div>
 
-        </nav>
-        <main>
-
-        </main>
-        <aside>
+					<div class="grid-nav">
+						<div class="grid-nav--icon">
+							<div class="nav__icon">
+								<i class="fas fa-bookmark"></i>
+							</div>
+							<p class="grid-nav--title">Reservation</p>
+						</div>
+					</div>
+					<div class="grid-nav">
+						<div class="grid-nav--icon">
+							<div class="nav__icon">
+								<i class="far fa-credit-card"></i>
+							</div>
+							<p class="grid-nav--title">Meeting</p>
+						</div>
+					</div>
+					<div class="grid-nav">
+						<div class="grid-nav--icon">
+							<div class="nav__icon">
+								<i class="fas fa-users"></i>
+							</div>
+							<p class="grid-nav--title">Customers</p>
+						</div>
+					</div>
+					<div class="grid-nav">
+						<div class="grid-nav--icon">
+							<div class="nav__icon">
+								<i class="fas fa-ticket-alt"></i>
+							</div>
+							<p class="grid-nav--title">Ticket</p>
+						</div>
+					</div>
+					<div class="grid-nav">
+						<div class="grid-nav--icon">
+							<div class="nav__icon">
+								<i class="fas fa-comments"></i>
+							</div>
+							<p class="grid-nav--title">Support</p>
+						</div>
+					</div>
+					<div class="grid-nav">
+						<div class="grid-nav--icon">
+							<div class="nav__icon">
+								<i class="fas fa-user"></i>
+							</div>
+							<p class="grid-nav--title">Profile</p>
+						</div>
+					</div>
+					<div class="grid-nav--logout">
+						<div class="grid-nav--icon">
+							<div class="nav__icon">
+								<i class="fas fa-power-off"></i>
+							</div>
+							<p class="grid-nav--title">Logout</p>
+						</div>
+					</div>
+				</div>
+			</nav>
+			<main>
+				<h2 class="top__main-title">Meetings</h2>
+				<div class="top__main">
+					<div class="top__flexbox">
+						<div class="flexbox__icon">
+							<img class="flexbox__img" src="img/meetings.png">
+						</div>
+						<h5 class="flexbox__titles">Number of meetings</h5>
+						<p class="flexbox__paragraph"><span class="highlighted">36</span> &nbsp&nbspThis month</p>
+					</div>
+					<div class="top__flexbox">
+						<div class="flexbox__icon">
+							<img class="flexbox__img" src="img/calender.png">
+						</div>
+						<h5 class="flexbox__titles">Rescheduled meetings</h5>
+						<p class="flexbox__paragraph"><span class="highlighted">14</span> &nbsp&nbspThis month</p>
+					</div>
+					<div class="top__flexbox">
+						<div class="flexbox__icon">
+							<img class="flexbox__img" src="img/ccalender.png">
+						</div>
+						<h5 class="flexbox__titles">Cancelled meetings</h5>
+						<p class="flexbox__paragraph"><span class="highlighted">20</span> &nbsp&nbspThis month</p>
+					</div>
+				</div>
+			</main>
+          <aside>
             <section class="notification_bar">
                 <div class="message">
                     <p class="notification_time">9:45</p>
@@ -68,8 +195,7 @@
                     </div>
                 </div>
             </section>
-
-
-        </aside>
-    </body>
+         </aside>
+		</div>
+	</body>
 </html>
