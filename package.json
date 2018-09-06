@@ -23,6 +23,7 @@
     "node-sass": "^4.9.3"
   },
   "dependencies": {
-    "grunt-browser-sync": "^2.2.0"
+    "grunt-browser-sync": "^2.2.0",
+    "package.json": "^2.0.1"
   }
 }
