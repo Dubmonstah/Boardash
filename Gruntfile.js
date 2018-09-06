@@ -9,7 +9,7 @@ module.exports = function(grunt) {
             },
             dist: {
                 files: {
-                    'css/index.css': 'css/index.scss'
+                    'css/index.css': 'sass/index.scss'
                 },
             },
         },
@@ -20,6 +20,13 @@ module.exports = function(grunt) {
                 options: {
                     spawn: false,
                 },
+            },
+        },
+        cssmin : {
+            target : {
+                src : 'css/index.css',
+                dest : 'css/index.min.css',
+
             },
         },
         browserSync: {
@@ -40,7 +47,8 @@ module.exports = function(grunt) {
 
     grunt.loadNpmTasks('grunt-sass');
     grunt.loadNpmTasks('grunt-contrib-watch');
+    grunt.loadNpmTasks('grunt-contrib-cssmin');
     grunt.loadNpmTasks('grunt-browser-sync');
-    grunt.registerTask('default', ['sass', 'browserSync', 'watch']);
+    grunt.registerTask('default', ['sass', 'browserSync', 'cssmin', 'watch']);
 
 };
