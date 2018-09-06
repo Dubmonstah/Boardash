@@ -7,7 +7,8 @@ aside {
 /*the outline of the bar itself and the layer of the bar*/
 .notification_bar {
   height: 87vh;
-  width: 250px;
+  width: 17vw;
+  min-width: 250px;
   display: flex;
   background-color: white;
   border-radius: 1px;
@@ -20,11 +21,17 @@ aside {
 /*this is the style for every message block*/
 .message {
   border-bottom: 1px solid lightgrey;
-  padding: 4px 20px; }
+  padding: 0 20px; }
+  .message--large {
+    border-bottom: 1px solid lightgrey;
+    padding: 0 20px 40px; }
 
 /*this is the styling for the profile picture in a message*/
 .message_pf {
-  border-radius: 100%; }
+  margin-right: 15px;
+  float: left;
+  border-radius: 100%;
+  width: 15%; }
 
 /*this is the little timestamp you see in the upperright corner in a message*/
 .notification_time {
@@ -33,6 +40,12 @@ aside {
   color: #979797;
   font-weight: bold; }
 
+.notification_text {
+  font-size: 14px; }
+
+.notification_list {
+  padding-left: 0; }
+
 /* Customize the label (the container) */
 .container_checkbox {
   display: block;
@@ -40,7 +53,7 @@ aside {
   padding-left: 35px;
   margin-bottom: 12px;
   cursor: pointer;
-  font-size: 15px;
+  font-size: 14px;
   -webkit-user-select: none;
   -moz-user-select: none;
   user-select: none; }
@@ -66,7 +79,7 @@ aside {
 
 /* When the checkbox is checked, add a blue background */
 .container_checkbox input:checked ~ .checkmark {
-  background-color: #2196F3; }
+  background-color: #00a2ff; }
 
 /* Create the checkmark/indicator (hidden when not checked) */
 .checkmark:after {
@@ -93,7 +106,8 @@ aside {
 .notification_buttons {
   display: flex;
   flex-direction: row;
-  border-bottom: 1px solid lightgray; }
+  border-bottom: 1px solid lightgray;
+  width: 100%; }
 
 .refresh {
   background-color: white;
@@ -116,6 +130,7 @@ ul {
 .switch {
   position: relative;
   display: inline-block;
+  margin-left: 23%;
   width: 30px;
   height: 17px; }
 
@@ -150,10 +165,10 @@ ul {
   display: inline; }
 
 input:checked + .slider {
-  background-color: #2196F3; }
+  background-color: #00a2ff; }
 
 input:focus + .slider {
-  box-shadow: 0 0 1px #2196F3; }
+  box-shadow: 0 0 1px #00a2ff; }
 
 input:checked + .slider:before {
   -webkit-transform: translateX(13px);
@@ -168,6 +183,30 @@ input:checked + .slider:before {
   border-radius: 50%; }
 
 .slider_text {
-  color: #2196F3; }
+  color: #00a2ff; }
+
+.inbox {
+  display: flex;
+  align-items: center; }
+
+.notification_bell {
+  margin: 40px;
+  height: 20px;
+  width: 20px;
+  background-color: #00a2ff;
+  padding: 15px;
+  border-radius: 100%;
+  z-index: 1; }
+
+.inbox_text {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; }
+
+.inbox-title {
+  margin: 0; }
+
+.today {
+  margin: 0; }
 
 /*# sourceMappingURL=index.css.map */
