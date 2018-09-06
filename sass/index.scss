@@ -1,4 +1,5 @@
 
+$text-font: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 
 .page__body{
 	background-color: rgb(245, 244, 244);
@@ -23,7 +24,7 @@
 
 			.header__logo{
 				font-weight: normal;
-				font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+				font-family: $text-font;
 			}
 
 		}
@@ -70,7 +71,7 @@
 
 				.dropdown__text{
 					cursor: default;
-					font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+					font-family: $text-font;
 				}
 
 				.dropdown__image{
@@ -108,7 +109,7 @@
 				margin-left: 17px;
 				color: rgba(128, 128, 128, 0.61);
 				width: 90px;
-				font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+				font-family: $text-font;
 			}
 
 			.header__add{
@@ -173,11 +174,13 @@
 		margin-bottom: 0px;
 		margin-top: 10px;
 		font-size: 19px;
+		font-family: $text-font;
 	}
 	.grid-admin--rank{
 		font-size: 12px;
 		color: #b2b2b2;
 		margin-top: 0px;
+		font-family: $text-font;
 	}
 
 	/*Nav-bar Links*/
@@ -211,6 +214,7 @@
 
 	.grid-nav--title{
 		margin-left: 40px;
+		font-family: $text-font;
 	}
 	.grid-nav--logout{
 		margin-top: 40px;
@@ -251,6 +255,7 @@
 	.top__main-title{
 		margin-top: 50px;
 		margin-left: 50px;
+		font-family: $text-font;
 	}
 
 	.top__main {
@@ -259,9 +264,10 @@
 		background-color: white;
 		margin-left: 40px;
 		width: 90%;
+		height: 120px;
 	}
 	.top__main>.top__flexbox {
-		height: 150px;
+		height: 120px;
 		width: 380px;
 	}
 	.top__main>.top__flexbox:nth-child(even) {
@@ -274,14 +280,17 @@
 		box-shadow: 1px 1px 1px 1px #e6e6e6;
 	}
 	.flexbox__img {
-		width: 40px;
+		margin-top: 5px;
+		width: 50px;
 	}
 	.flexbox__icon {
 		float: left;
 		border-radius: 100%;
 		padding: 10px;
+		width: 50px;
+		height: 50px;
 		background-color: #f3f2f2;
-		margin: 20px 0 20px 35px;
+		margin: 25px 0px 0px 35px;
 	}
 		.flexbox__titles {
 		text-align: center;
