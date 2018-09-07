@@ -157,7 +157,14 @@ $fontsize: 14px;
 		margin-top: -0.1%;
 		height: 35px;
 	}
-
+	#grid-target{
+		background-color: #e6f2ff;
+		border-left: 1.5px solid $blue;
+		color: $blue;
+	}
+	#grid-target--icon{
+		color: $blue;
+	}
 	.grid-admin{
 		padding-bottom: 35px;
 	}
@@ -269,7 +276,7 @@ $fontsize: 14px;
 		align-items: center;
 		background-color: white;
 		margin-left: 40px;
-		width: 90%;
+		width: 65vw;
 		height: 120px;
 	}
 	.top__main>.top__flexbox {
@@ -301,11 +308,14 @@ $fontsize: 14px;
 		.flexbox__titles {
     text-align: center;
     font-family: $text-font;
+			margin-bottom: 0;
+			margin-top: 40px;
 	}
 	.flexbox__paragraph {
 	color: grey;
   text-align: center;
   font-family: $text-font;
+		margin-top: 5px;
 	}
 	.highlighted {
 	font-size: 25px;
@@ -352,7 +362,7 @@ html {
     gap: 20px;
   }
   width: 95%;
-  margin-left: 50px;
+  margin-left: 40px;
   padding-bottom: 20px;
 
   & > .message {
@@ -619,6 +629,7 @@ aside{
   padding-top:10px;
   padding-bottom:10px;
   outline: none;
+	cursor:pointer;
 
 }
 .close{
@@ -629,6 +640,7 @@ aside{
   border-bottom: none;
   border-right: none;
   outline: none;
+	cursor:pointer;
 }
 ul{
   list-style-type: none;
