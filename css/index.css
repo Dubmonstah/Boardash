@@ -11,8 +11,7 @@
     justify-content: flex-start;
     flex-flow: row;
     align-items: center;
-    box-shadow: #656565 9px;
-    height: 10vh;
+    height: 9vh;
     width: 100vw; }
     .page__body .page__header .page__logo {
       width: 20%;
@@ -71,7 +70,7 @@
       .page__body .page__header .header__search .header__dropdown:hover .header__dropdown-content {
         display: block; }
     .page__body .page__header .header__profile {
-      margin-left: 190px;
+      margin-left: 85px;
       display: flex;
       align-items: center;
       flex-wrap: nowrap; }
@@ -180,9 +179,10 @@
   .page__body .fas.fa-power-off {
     font-size: 13px; }
   .page__body .top__main-title {
-    margin-top: 50px;
+    margin-top: 30px;
     margin-left: 50px;
-    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif; }
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+    font-weight: normal; }
   .page__body .top__main {
     display: flex;
     align-items: center;
@@ -369,20 +369,23 @@ aside {
     padding: 0 20px 40px; }
 
 /*this is the styling for the profile picture in a notification*/
-.notification_pf {
+.notification_pp {
   margin-right: 15px;
   float: left;
   border-radius: 100%;
-  width: 15%; }
+  width: 35px;
+  height: 35px; }
 
 /*this is the little timestamp you see in the upperright corner in a notification*/
 .notification_time {
   text-align: right;
   font-size: 10px;
   color: #979797;
-  font-weight: bold; }
+  font-weight: bold;
+  margin-bottom: 5px; }
 
 .notification_text {
+  margin-top: 0;
   font-size: 14px; }
 
 .notification_list {
@@ -408,12 +411,14 @@ aside {
 
 /* Create a custom checkbox */
 .checkmark {
+  border: 2px solid lightgray;
+  border-radius: 20%;
   position: absolute;
   top: 0;
   left: 0;
   height: 15px;
   width: 15px;
-  background-color: #eee; }
+  background-color: white; }
 
 /* On mouse-over, add a grey background color */
 .container_checkbox:hover input ~ .checkmark {
@@ -436,7 +441,7 @@ aside {
 /* Style the checkmark/indicator */
 .container_checkbox .checkmark:after {
   left: 3px;
-  top: 2px;
+  top: -10px;
   width: 5px;
   height: 10px;
   border: solid white;
@@ -449,7 +454,8 @@ aside {
   display: flex;
   flex-direction: row;
   border-bottom: 1px solid lightgray;
-  width: 100%; }
+  width: 100%;
+  height: 40px; }
 
 .refresh {
   background-color: white;
@@ -475,6 +481,7 @@ ul {
   position: relative;
   display: inline-block;
   margin-left: 23%;
+  margin-bottom: 10%;
   width: 30px;
   height: 17px; }
 
@@ -505,8 +512,9 @@ ul {
   transition: .4s; }
 
 .slider_text {
-  padding-left: 40px;
-  display: inline; }
+  padding-left: 60px;
+  display: inline;
+  font-size: 13px; }
 
 input:checked + .slider {
   background-color: #00a2ff; }
@@ -528,6 +536,11 @@ input:checked + .slider:before {
 
 .slider_text {
   color: #00a2ff; }
+
+.message_joining {
+  color: #00a2ff;
+  font-size: 15px;
+  margin-top: 0; }
 
 .inbox {
   display: flex;
