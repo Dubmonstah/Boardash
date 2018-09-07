@@ -1,3 +1,0 @@
-# Boardash
-
-Project Competa
