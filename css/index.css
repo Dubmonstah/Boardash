@@ -512,7 +512,8 @@ ul {
   transition: .4s; }
 
 .slider_text {
-  padding-left: 60px;
+  color: #00a2ff;
+  padding-left: 40px;
   display: inline;
   font-size: 13px; }
 
@@ -533,9 +534,6 @@ input:checked + .slider:before {
 
 .slider.round:before {
   border-radius: 50%; }
-
-.slider_text {
-  color: #00a2ff; }
 
 .message_joining {
   color: #00a2ff;

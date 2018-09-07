@@ -665,7 +665,8 @@ ul{
   transition: .4s;
 }
 .slider_text{
-  padding-left: 60px;
+	color: $blue;
+  padding-left: 40px;
   display: inline;
 	font-size:13px;
 }
@@ -691,9 +692,6 @@ input:checked + .slider:before {
 
 .slider.round:before {
   border-radius: 50%;
-}
-.slider_text{
-  color: $blue;
 }
 .message_joining{
 	color:$blue;
