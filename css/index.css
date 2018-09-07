@@ -384,6 +384,10 @@ aside {
   font-weight: bold;
   margin-bottom: 5px; }
 
+.dot {
+  width: 5px;
+  margin-right: 10px; }
+
 .notification_text {
   margin-top: 0;
   font-size: 14px; }
