@@ -211,10 +211,12 @@
     background-color: #f3f2f2;
     margin: 25px 0px 0px 35px; }
   .page__body .flexbox__titles {
-    text-align: center; }
+    text-align: center;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif; }
   .page__body .flexbox__paragraph {
     color: grey;
-    text-align: center; }
+    text-align: center;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif; }
   .page__body .highlighted {
     font-size: 25px;
     font-weight: bold;
@@ -230,11 +232,13 @@ html {
 
 .message__title {
   margin-left: 60px;
-  margin-top: 30px; }
+  margin-top: 30px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif; }
 
 .message__container {
   background: transparent;
   display: grid;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   grid-template-columns: 280px 280px 280px 280px;
   grid-template-rows: 14%;
   grid-gap: 20px;
@@ -335,5 +339,219 @@ html {
   margin-left: 110px;
   font-size: 12px;
   cursor: pointer; }
+
+aside {
+  position: fixed;
+  bottom: 0;
+  right: 0; }
+
+/*the outline of the bar itself and the layer of the bar*/
+.notification_bar {
+  height: 87vh;
+  width: 17vw;
+  min-width: 250px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  display: flex;
+  background-color: white;
+  border-radius: 1px;
+  -webkit-box-shadow: -41px 3px 175px -19px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: -41px 3px 175px -19px rgba(0, 0, 0, 0.2);
+  box-shadow: -41px 3px 175px -19px rgba(0, 0, 0, 0.2);
+  flex-direction: column;
+  z-index: 2; }
+
+/*this is the style for every notification block*/
+.notification {
+  border-bottom: 1px solid lightgrey;
+  padding: 0 20px; }
+  .notification--large {
+    border-bottom: 1px solid lightgrey;
+    padding: 0 20px 40px; }
+
+/*this is the styling for the profile picture in a notification*/
+.notification_pf {
+  margin-right: 15px;
+  float: left;
+  border-radius: 100%;
+  width: 15%; }
+
+/*this is the little timestamp you see in the upperright corner in a notification*/
+.notification_time {
+  text-align: right;
+  font-size: 10px;
+  color: #979797;
+  font-weight: bold; }
+
+.notification_text {
+  font-size: 14px; }
+
+.notification_list {
+  padding-left: 0; }
+
+/* Customize the label (the container) */
+.container_checkbox {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 14px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none; }
+
+/* Hide the browser's default checkbox */
+.container_checkbox input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer; }
+
+/* Create a custom checkbox */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 15px;
+  width: 15px;
+  background-color: #eee; }
+
+/* On mouse-over, add a grey background color */
+.container_checkbox:hover input ~ .checkmark {
+  background-color: #ccc; }
+
+/* When the checkbox is checked, add a blue background */
+.container_checkbox input:checked ~ .checkmark {
+  background-color: #00a2ff; }
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none; }
+
+/* Show the checkmark when checked */
+.container_checkbox input:checked ~ .checkmark:after {
+  display: block; }
+
+/* Style the checkmark/indicator */
+.container_checkbox .checkmark:after {
+  left: 3px;
+  top: 2px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg); }
+
+.notification_buttons {
+  display: flex;
+  flex-direction: row;
+  border-bottom: 1px solid lightgray;
+  width: 100%; }
+
+.refresh {
+  background-color: white;
+  width: 50%;
+  border: none;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  outline: none; }
+
+.close {
+  background-color: white;
+  width: 50%;
+  border-left: 1px solid lightgray;
+  border-top: none;
+  border-bottom: none;
+  border-right: none;
+  outline: none; }
+
+ul {
+  list-style-type: none; }
+
+.switch {
+  position: relative;
+  display: inline-block;
+  margin-left: 23%;
+  width: 30px;
+  height: 17px; }
+
+.switch input {
+  display: none; }
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+  float: left; }
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 13px;
+  width: 13px;
+  left: 2px;
+  bottom: 2px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s; }
+
+.slider_text {
+  padding-left: 40px;
+  display: inline; }
+
+input:checked + .slider {
+  background-color: #00a2ff; }
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #00a2ff; }
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(13px);
+  -ms-transform: translateX(13px);
+  transform: translateX(13px); }
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px; }
+
+.slider.round:before {
+  border-radius: 50%; }
+
+.slider_text {
+  color: #00a2ff; }
+
+.inbox {
+  display: flex;
+  align-items: center; }
+
+.notification_bell {
+  margin: 40px;
+  height: 20px;
+  width: 20px;
+  background-color: #00a2ff;
+  padding: 15px;
+  border-radius: 100%;
+  z-index: 1; }
+
+.inbox_text {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; }
+
+.inbox-title {
+  margin: 0; }
+
+.today {
+  margin: 0;
+  color: gray; }
 
 /*# sourceMappingURL=index.css.map */
